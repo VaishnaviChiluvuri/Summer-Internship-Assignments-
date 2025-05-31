@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #sideNavbar a{
+            position:absolute;
+            left:-80px; 
+            transition:0.3s;
+            padding:15px;
+            width:100px;
+            font-size:20px;
+            border:0px 5px 5px 0px;
+            text-decoration:none;
+            font-weight:bold;
+            color:white;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius:20px;
+        }
+        #sideNavbar a:hover{
+            left:0px;
+        }
+        #about{
+            top:20px;
+            background-color:green;
+        }
+        #blog{
+            top:80px;
+            background-color:rgb(33, 33, 246);
+        }
+        #project{
+            top:140px;
+            background-color:red;
+        }
+        #contact{
+            top:200px;
+            background-color:lightslategray;
+        }
+    </style>
+</head>
+<body>
+<div id="sideNavbar">
+    <a href="#" id="about"> About </a>
+    <a href="#" id="blog"> Blogs </a>
+    <a href="#" id="project"> Projects </a>
+    <a href="#" id="contact"> Contact </a>
+</div>
+    <div style="margin-left:80px">
+        <h1> Hoverable SideNav Buttons</h1>
+        <p> Hover over the buttons in the left side navigation to open them.</p>
+    </div>
+
+</body>
+</html>
