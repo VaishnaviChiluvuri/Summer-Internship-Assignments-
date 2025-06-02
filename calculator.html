@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <style>
+body {
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.calculator {
+  background: #555;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 8px #aaa;
+  width:260px;
+}
+
+.display {
+  width: 100%;
+  height: 40px;
+  font-size: 24px;
+  text-align: right;
+  margin-bottom: 10px;
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+  background: white;
+  box-sizing: border-box;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 60px);
+  grid-gap: 5px;
+}
+
+button {
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  background: #3ddad7;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #33c2bf;
+}
+
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <input type="text" class="display" value="0" readonly>
+    <div class="buttons">
+      <button>C</button>
+      <button>%</button>
+      <button>&larr;</button>
+      <button>/</button>
+
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button>*</button>
+
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button>-</button>
+
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>+</button>
+
+      <button>00</button>
+      <button>0</button>
+      <button>.</button>
+      <button>=</button>
+    </div>
+  </div>
+</body>
+</html>
